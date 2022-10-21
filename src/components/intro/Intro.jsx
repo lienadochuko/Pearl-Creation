@@ -31,7 +31,7 @@ const Intro = () => {
                         <div className="i-title-item">PEARLBLOG</div>
                         <div className="i-title-item">FASHION ADVICE</div>
                         <div className="i-title-item">JUICY GOSSIP</div>
-                        <div className="i-title-item">SONG OF THE WEEK</div>
+                        <div className="i-title-item">SONG OF THE WEEK(LOCAL)</div>
                     </div>
                 </div>
                 <p className="i-desc"
