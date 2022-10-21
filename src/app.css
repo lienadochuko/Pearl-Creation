@@ -17,6 +17,30 @@ body{
  padding: 0%;
 }
 
+.imag {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: -5px;
+    left: 40px;
+    padding: 0%;
+    margin-top: 0px;
+}
+
+.name {
+    width: 70px;
+    height: 35px;
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(192, 1, 179);
+    text-decoration: wavy;
+    font-style: italic;
+    left: 80px;
+    display: flex;
+    align-items: center;
+}
+
 .tmenu{
     width: 100%;
     position: fixed;

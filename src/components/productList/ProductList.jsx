@@ -8,7 +8,7 @@ const ProductList = () => {
    <div className="pl">
     <div className="pl-circle"></div>
     <div className="pl-texts">
-        <h1 className="pl-title"> Build & Inspire. It's Eris</h1>
+        <h1 className="pl-title"> Pearl's BLOG</h1>
         <p className="pl-desc">
             Eris is a Modern and Creative portfolio that
              your work needs. Beautiful pages, stunning 

@@ -1,26 +1,42 @@
 .i{
     display: flex;
-    height: 100vh;
+    height: 80vh;
+    background-image: url("../../images/navy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .i-left{
     flex:1;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .i-right{
-    flex:1;
+    width: 40%;
+    height: 100%;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .i-left-wrapper{
     padding: 50px;
-    height: 50%;
+    width: 90%;
+    height: 56%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.i-right-wrapper{
+    width: 100%;
+    height:100%;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .i-intro{
@@ -29,7 +45,7 @@
 }
 
 .i-name{
-    font-size: 50px;
+    font-size: 45px;
 }
 
 .i-title{
@@ -40,12 +56,43 @@
 
 .i-title-wrapper{
     height: 100%;
+    width: 100%;
     align-items: center;
     text-align: left;
     margin: 0%;
     margin-top: -10px;
     padding: 0%;
     animation: move 10s ease-in-out infinite alternate;
+}
+
+.i-title-2 {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+}
+.i-title-wrapper2{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    text-align: left;
+    margin: 0%;
+    padding: 0%;
+    animation: moves 20s ease-in-out infinite alternate;
+}
+@keyframes moves {
+    25%{
+        transform: translateX(-400px);
+    }
+    50%{
+        transform: translateX(-800px);
+    }
+    75%{
+        transform: translateX(-1200px);
+    }
+    100%{
+        transform: translateX(-1600px);
+    }
 }
 
 @keyframes move {
@@ -65,11 +112,22 @@
 
 .i-title-item{
     height: 50px;
+    width: 100%;
     font-size: 30px;
     font-weight: bold;
-    color: rgb(172, 167, 2);
+    color:  rgb(192, 1, 179);
     display: flex;
     align-items: center;
+}
+
+img .i-title-item1{
+    height: 400px;
+    width: 400px;
+}
+
+.i-title-item1{
+    height: 400px;
+    width: 400px;
 }
 
 .i-desc{

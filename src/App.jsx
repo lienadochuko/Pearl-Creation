@@ -2,6 +2,7 @@ import React,{ useContext, useRef } from "react";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
+import imag from "./images/logo.png";
 import ProductList from "./components/productList/ProductList";
 import Toggel from "./components/toggle/Toggel";
 import { ThemeContext } from "./context";
@@ -32,13 +33,15 @@ const App = () => {
      <div className='tmenu' 
      style={{color:darkMode ? "black" : "white" , 
      background:darkMode ? "rgba(255, 255, 255, 0.447)" : "rgba(0, 0, 0, 0.486"}}>
+       <img src={imag} className="imag" alt="logo"/>
+       <p className="name">Pearl Creation</p>
       <div className="tog" 
       style={{backgroundColor:theme.state.darkMode ? "#fff" : "#222",
       border:theme.state.darkMode ? "2px solid #fff" : "2px solid #222" , 
       borderRadius:theme.state.darkMode ? "50px" : "50px"}}><Toggel/></div>
       <div className='p2' onClick={() => scollToRef.current.scrollIntoView()} >Home</div>
       <div className='p1' onClick={() => scollToRef1.current.scrollIntoView()}>About</div>
-      <div className='p1' onClick={() => scollToRef2.current.scrollIntoView()}>Product</div>
+      <div className='p1' onClick={() => scollToRef2.current.scrollIntoView()}>Blog</div>
       <div className='p3' onClick={() => scollToRef3.current.scrollIntoView()}>Contact</div>
       </div>
     <section ref={scollToRef}>
