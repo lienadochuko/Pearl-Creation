@@ -45,9 +45,7 @@ const handleSubmit2 = () => {
       </div>
       <div className='abwrapper'>
       <div className="a-left">
-        <div className="a-cardbg"></div>
         <div className="a-card">
-            <img src={black} alt="" className="a-img" />
         </div>
       </div>
       <div className="a-right">
