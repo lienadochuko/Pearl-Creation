@@ -6,10 +6,23 @@ import pic1 from "../../images/feature.png";
 import pic2 from "../../images/feature.png";
 import pic3 from "../../images/feature.png";
 import pic4 from "../../images/feature.png";
+import { useNavigate } from "react-router-dom";
+
 
 const Intro = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+  let nav = useNavigate();
+ 
+      const handleSubmit = () => {
+        nav("/");
+    }
+    const handleSubmit1 = () => {
+        nav("/About");
+    }
+    const handleSubmit2 = () => {
+        nav("/Blog");
+    }
   return (
     <div className="i">
         <div className="i-left">
@@ -28,7 +41,7 @@ const Intro = () => {
                 <div className="i-title">
                     <div className="i-title-wrapper">
                         <div className="i-title-item">NYSC UPDATE and KITS</div>
-                        <div className="i-title-item">PEARLBLOG</div>
+                        <div className="i-title-item" onClick={handleSubmit2}>PEARLBLOG</div>
                         <div className="i-title-item">FASHION ADVICE</div>
                         <div className="i-title-item">JUICY GOSSIP</div>
                         <div className="i-title-item">SONG OF THE WEEK(LOCAL)</div>
