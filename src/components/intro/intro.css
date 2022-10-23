@@ -4,6 +4,8 @@
     background-image: url("../../images/navy.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 0px 0px 50px 50px;
+    margin-bottom: 50px;
 }
 
 .i-left{
@@ -66,19 +68,19 @@
 }
 
 .i-title-2 {
-    height: 400px;
-    width: 400px;
+    height: 75%;
+    width: 80%;
     overflow: hidden;
 }
 .i-title-wrapper2{
     display: flex;
-    height: 400px;
-    width: 400px;
+    height: 100%;
+    width: 100%;
     align-items: center;
     text-align: left;
     margin: 0%;
     padding: 0%;
-    animation: moves 20s ease-in-out infinite alternate;
+    animation: moves 30s ease-in-out infinite alternate;
 }
 @keyframes moves {
     25%{
@@ -121,8 +123,8 @@
 }
 
 img .i-title-item1{
-    height: 400px;
-    width: 400px;
+    height: 100%;
+    width: 100%;
 }
 
 .i-title-item1{

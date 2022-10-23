@@ -1,17 +1,24 @@
 .pl{
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     padding-top: 0px;
     padding-bottom: 0px;
     margin: 0%;
+    
+}
+.plwrapper {
+    width: 100%;
+    height: fit-content;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0%;
+    padding-top: 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     position: relative;
-    
 }
-
 .pl-texts{
     width: 55%;
     position: absolute;
@@ -23,7 +30,7 @@
 }
 
 .pl-desc{
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 
 .pl-list{
@@ -40,7 +47,7 @@
 .pl-circle{
     margin: 0%;
     clip-path: circle(50% at 50% 50%);
-    background-color: rgb(172, 167, 2);
+    background-color: rgb(192, 1, 179);
     width:45%;
     height: 90%;
     padding-top: 50px;

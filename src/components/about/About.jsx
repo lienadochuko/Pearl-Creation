@@ -1,15 +1,49 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import "./about.css"
+import { ThemeContext } from "../../context";
 import black from "../../images/driven.png";
 import sch from "../../images/HRBA.png";
+import imag from "../../images/logo.png";
 import sch2 from "../../images/Meritorious Service.png";
 import sch3 from "../../images/jobberman.png";
 import sch4 from "../../images/certificate-cola.png"
+import Toggel from "../toggle/Toggel";
+import "../../app.css";
+import { useNavigate } from "react-router-dom";
 
 
 const About = () => {
+  let nav = useNavigate();
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
+  const handleSubmit = () => {
+    nav("/");
+}
+const handleSubmit1 = () => {
+    nav("/About");
+}
+const handleSubmit2 = () => {
+    nav("/Blog");
+}
   return (
-    <div className='a'>
+    <div className='a'  style={{backgroundColor:darkMode ? "#222" : "white", 
+    color:darkMode ? "white" : "black"}}>
+     <div className='tmenu' 
+     style={{color:darkMode ? "black" : "white" , 
+     background:darkMode ? "rgba(255, 255, 255, 0.447)" : "rgba(0, 0, 0, 0.486"}}>
+       <img src={imag} className="imag" alt="logo"/>
+       <p className="name">Pearl Creation</p>
+      <div className="tog" 
+      style={{backgroundColor:theme.state.darkMode ? "#fff" : "#222",
+      border:theme.state.darkMode ? "2px solid #fff" : "2px solid #222" , 
+      borderRadius:theme.state.darkMode ? "50px" : "50px"}}><Toggel/></div>
+      <div className='p2' onClick={handleSubmit}>Home</div>
+      <div className='p1' onClick={handleSubmit1}>About</div>
+      <div className='p1' onClick={handleSubmit2}>Blog</div>
+      <div className='p3' >Contact</div>
+      </div>
+      <div className='abwrapper'>
       <div className="a-left">
         <div className="a-cardbg"></div>
         <div className="a-card">
@@ -81,6 +115,7 @@ const About = () => {
         </div>
             </div>
         </div>
+      </div>
       </div>
     </div>
   )
