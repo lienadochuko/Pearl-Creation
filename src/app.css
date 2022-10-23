@@ -33,6 +33,7 @@ body{
     position: absolute;
     font-size: 12px;
     font-weight: 600;
+    line-height: 10px;
     color: rgb(192, 1, 179);
     text-decoration: wavy;
     font-style: italic;
@@ -47,7 +48,7 @@ body{
     display: flex;
     justify-content: flex-end;
     height: 35px;
-    z-index:9996;
+    z-index:9999;
     background-color: rgba(255, 255, 255, 0.447);
 }
 
@@ -85,6 +86,12 @@ body{
     margin-top: 10px;
     cursor: pointer;
     font-weight: 500;
+}
+.about {
+    height: 65vh;
+    overflow: hidden;
+    border-top: 1px solid white ;
+    border-radius: 20px 20px 0px 0px;
 }
 
 @media screen and (max-width: 480px) {
