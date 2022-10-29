@@ -1,5 +1,6 @@
 import React,{ useContext, useRef } from "react"; 
 import About from "./components/about/About";
+import Aboutprev from "./components/about/Aboutprev";
 import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
 import ProductList from "./components/productList/ProductList";
@@ -34,7 +35,7 @@ const Insert = () => {
     <ProductList/>
     </section>
     <section className="about">
-    <About/>
+    <Aboutprev/>
     </section> 
     <section ref={scollToRef3}>
     <Contact/>
