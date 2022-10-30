@@ -120,7 +120,6 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <div className="c-footer">eris.dev@2022</div>
     </div>
   )
 }

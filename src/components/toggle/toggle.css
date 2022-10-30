@@ -34,8 +34,6 @@
 
 @media screen and (max-width: 480px) {
     .t{
-    margin-top: 10px;
-    margin-right: 5px;
     z-index: 9999;
     position: fixed;
     scroll-behavior: smooth;
@@ -47,6 +45,7 @@
     
     .t-icon1{
         position: relative;
+        margin-left: 7px;
     }
     
 

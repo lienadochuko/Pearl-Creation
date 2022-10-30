@@ -6,7 +6,7 @@
 .a1{
     width: 99%;
     height: 65vh;
-    border: 1px solid white ;
+    border: 2px solid rgb(132, 132, 132) ;
     border-radius: 20px 20px 30px 30px;
 }
 .tmenu{
@@ -121,7 +121,7 @@
     width: 65%;
     height: 65%;
     position: relative;
-    border: 2px solid #333;
+    border: 2px solid rgb(192, 1, 179);
     border-radius: 50%;
     left: 0px;
 }
@@ -151,6 +151,7 @@ img .a-img {
 }
 
 .a-title{
+    color: rgb(192, 1, 179);;
     font-weight: 400;
 }
 
@@ -223,14 +224,18 @@ img .a-img {
     .a{
         flex-direction: column;
         text-align: center;
-        margin-top: 10px;
+    }
+
+    .a1 {
+        width: 100%;
+        height: fit-content;
     }
 
     .a-left{
+        margin-top: 7%;
         position: absolute;
         width: 100%;
         height: 200px;
-        margin-top: 20px;
     }
 
     .a-cardbg{
@@ -254,8 +259,29 @@ img .a-img {
         display: none;
     }
 
+    .abwrapper1 {
+        display: flex;
+        height: 500px;
+        align-items:center;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 0px;
+    }
+    .a-left1 {
+        height: 50%;
+        width: 100%;
+        margin: 0%;
+        margin-top: 5px;
+        padding: 0%;
+    }
+
+    .a-card1{
+        width: 60%;
+        height: 100%;
+    }
+
     .a-right{
-        height: 100px;
+        height: 60%;
         padding: 20px;
         overflow: hidden;
         margin-top: 200px;
@@ -269,5 +295,23 @@ img .a-img {
     .a-desc{
         font-size: 13px;
         text-align: justify;    
+    }
+    .a-right1{
+        height: 150px;
+        padding: 20px;
+    }
+
+    .a-title {
+        font-weight: 600;
+    }
+
+    .a-sub1{
+        font-size: 13px;
+        text-align: justify;
+        margin: 10px 0px;    
+    }
+
+    .a-desc1{
+       display: none;
     }
 }

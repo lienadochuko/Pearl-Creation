@@ -94,15 +94,45 @@ body{
 }
 
 @media screen and (max-width: 480px) {
+
+    .imag {
+       display: none;
+    }
+    
+    .name {
+        left: 10px;
+    }
+    
+    .tmenu{
+        width: 100%;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        height: 35px;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, 0.447);
+    }
+
     .p1{
-        font-size: 10px;
+        font-size: 14px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
     
     .p2 {
-        font-size: 10px;
+        font-size: 14px;
+        margin-left: 8px;
+        margin-right: 5px;
     }
     
     .p3 {
-        font-size: 10px;
+        font-size: 14px;
+        margin-right:0px ;
+        margin-left: 4px;
+        padding: 0px;
+    }
+    .tog{
+        position: absolute;
+        right: 0;
     }
 }

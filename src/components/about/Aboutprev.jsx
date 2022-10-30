@@ -11,7 +11,7 @@ const Aboutprev = () => {
   return (
     <div className='a1'  style={{backgroundColor:darkMode ? "#222" : "white", 
     color:darkMode ? "white" : "black"}}>
-      <div className='abwrapper1'>
+      <div className='abwrapper1' style={{borderColor:darkMode ? "" : "black"}}>
       <div className="a-left1">
         <div className="a-card1">
             <img src={pic} alt="my pic" className='cardimg'/>

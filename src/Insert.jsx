@@ -40,6 +40,7 @@ const Insert = () => {
     <section ref={scollToRef3}>
     <Contact/>
     </section>
+    <div className="c-footer">eris.dev@2022</div>
   </div>
   )
 };
